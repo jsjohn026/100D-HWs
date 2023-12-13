@@ -1,0 +1,80 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav * {
+  display: block;
+  padding: 5px 10px;
+  float: left;
+}
+
+main {
+  float: left;
+}
+
+main section {
+  float: left;
+  width: 50%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.banner li {
+  list-style: none;
+  float: left;
+  padding: 10px 5px;
+  margin-right: 10px;
+  width: 20%;
+  background-color: blue;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.banner li:first-of-type {
+  padding: 10px 0;
+}
+
+.banner li a {
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+  display: block;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

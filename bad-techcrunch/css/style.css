@@ -1,0 +1,96 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  width: 15%;
+  padding-left: 15px;
+  float: left;
+}
+
+nav * {
+  padding-top: 10px;
+}
+
+.extra-crunch {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: orange;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+nav > a {
+  float: left;
+}
+
+input {
+  border: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  color: gray;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.mid-column {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 20%;
+}
+
+.bottom-banner {
+  float: right;
+  width: 85%;
+}
+
+.bottom-column {
+  float: left;
+  width: 28.33%;
+  padding-top: 20px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
