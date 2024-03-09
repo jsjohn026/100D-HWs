@@ -21,20 +21,95 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+body * {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  color: #29475b;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+header {
+  margin-top: 0;
+  background-color: #f4f9fc;
 }
 
-footer {
+h1 {
+  font-size: 36px;
+}
 
+h2 {
+  font-size: 38px;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+}
+
+li {
+  float: left;
+  padding: 20px;
+  width: 16.6666;
+}
+
+li:first-of-type {
+  padding-right: 100px;
+  padding-left: 0;
+  float: left;
+}
+
+li:last-of-type {
+  padding-left: 100px;
+  float: right;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  background-color: #29475b;
+  padding: 5px 20px;
+}
+
+.banner-top {
+  height: 400px;
+  padding: 75px;
+}
+
+.banner-bottom {
+  float: left;
+}
+
+.banner-top section {
+  float: left;  
+  width: 50%;
+  padding: 30px;
+}
+
+.banner-bottom section {
+  float: left;
+  width: 25%;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.banner {
+  background-color: #f4f9fc;
+  float: left;
+  width: 100%;
+}
+
+.content {
+  float: left;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 /******************************************
