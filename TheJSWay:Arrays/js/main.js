@@ -34,12 +34,69 @@ for ( const musketeer of musketeers) {
 // Write a program that creates the following array, then calculates and shows the sum of its values (42 in that case).
 // const values = [3, 11, 7, 2, 9, 10];
 
+// const values = [3, 11, 7, 2, 9, 10];
+
+function sum(arr) {
+  
+  let total = 0;
+
+  for (const ele of arr) {
+    total += ele
+    console.log(total)
+  }
+
+  return total
+}
+
+// console.log(sum(values));
 
 // Array maximum
 // Write a program that creates the following array, then calculates and shows the array's maximum value.
-
 // const values = [3, 11, 7, 2, 9, 10];
 
+const values = [3, 11, 7, 2, 9, 10]
+
+function maxValue(arr) {
+  maxVal = 0
+
+  for (const ele of arr) {
+    if(ele > maxVal) {
+      maxVal = ele;
+    } else {
+      // console.log(maxVal)
+    }
+  }
+  return maxVal
+}
+
+console.log(maxValue(values));
 
 // List of words
 // Write a program that asks the user for a word until the user types "stop". The program then shows each of these words, except "stop".
+
+
+document.querySelector('#submit').addEventListener('click', usersWords)
+
+const words = []
+
+function usersWords() {
+  
+  const userWord = document.querySelector('#word').value.toLowerCase()
+
+  if( userWord !== "stop") {
+    words.push(userWord)
+  } else {
+
+    console.log("Stopping")
+
+    for(const word of words) {
+      let wordList = document.querySelector("#words")
+
+      wordList.appendChild(document.createElement('p')).textContent = ` ${word} `
+    }
+
+    // words = []
+    
+  }
+  
+}
