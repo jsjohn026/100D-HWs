@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List from Scratch</title>
+</head>
+<body>
+  <h1>To Do list</h1>
+  <ul class="todos">
+    <% for(let i = 0; i < info.length; i++) {%>
+      <li class="todo">
+        <span><%= info[i].todoItem %></span>
+        <span class="delete">delete</span>
+      </li>
+    <% } %>
+  </ul>
+
+  <h2>Add a To Do:</h2>
+  <form action="/addtodo" method="post">
+    
+  </form>
+</body>
+</html>
