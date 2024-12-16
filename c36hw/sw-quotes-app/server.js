@@ -3,7 +3,7 @@ const app = express()
 const PORT = 3000
 const MongoClient = require('mongodb').MongoClient
 
-const connectionString = 'mongodb+srv://yoda:JVoqKySaLrpAvUXD@cluster0.qrycb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const connectionString = process.env
 
 MongoClient.connect(connectionString)
   .then(client => {
