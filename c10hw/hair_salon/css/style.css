@@ -1,0 +1,135 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body * {
+  font-family: 'Allrounder Monument Test', sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  margin-top: 0;
+  background-color: #ffffff;
+  float: left;
+  width: 100%;
+}
+
+h1 {
+  font-size: 85px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+}
+
+li {
+  float: left;
+  padding: 20px;
+  width: 16.6666;
+}
+
+li:first-of-type {
+  padding-right: 100px;
+  padding-left: 0;
+  float: left;
+}
+
+li:last-of-type {
+  padding-right: 60px;
+  float: right;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  padding: 5px 20px;
+}
+
+.banner-top {
+  height: 400px;
+  padding: 75px;
+}
+
+.banner-bottom {
+  float: left;
+}
+
+.banner-top section {
+  float: left;  
+  padding: 30px;
+}
+
+.banner-column-left {
+  width: 70%;
+}
+
+.banner-column-right {
+  width: 30%;
+}
+
+.banner-bottom section {
+  float: left;
+  width: 25%;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.banner {
+  background-color: #f4f9fc;
+  float: left;
+  width: 100%;
+}
+
+.content {
+  float: left;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.search-bar {
+  width: 0px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
