@@ -69,13 +69,26 @@ header {
   background: #62778c;
   color: white;
   text-align: center;
+  margin: 0 auto;
   padding: 50px;
+}
+
+.top-row-description {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  font-weight: 600;
+}
+
+video {
+  width: 50px;
 }
 
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 600;
   margin: 0;
-  padding: 50px;
+  padding: 10px;
 }
 
 #donate {
@@ -83,6 +96,19 @@ h1 {
   background: white;
   border-radius: 5px;
   padding: 5px 10px;
+}
+
+.third-row {
+  background-color: lightgray;
+  display: flex;
+  margin: 0 auto;
+}
+
+.second-row, .fourth-row {
+  color: black;
+  margin: 0 auto;
+  padding:  100px 250px;
+  text-align: center;
 }
 
 footer {
