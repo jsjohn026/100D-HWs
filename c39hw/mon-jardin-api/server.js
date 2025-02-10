@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const PORT = 8000
+
+app.use(cors());
+app.use(express.static(__dirname)); //tells express to look in the main directory where server.js is located to look for any requested static files. 
 
 // Create some data
 const plants = {
