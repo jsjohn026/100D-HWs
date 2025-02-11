@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const MongoClient = require('mongodb').MongoClient
-const PORT = 8000
+const PORT = 5500
 require('dotenv').config()
 
 let db, 
@@ -36,6 +36,26 @@ app.post('/addPlant', (req, res) => {
   .then(result => {
     console.log('Plant Added')
     res.redirect('/')
+  })
+  .catch(err => console.error(err))
+})
+
+app.put('/addOneLike', (req, res) => {
+  db.collection('plants').updateOne({
+    plant: req.body.plant, 
+    variety: req.body.variety, 
+    likes: req.body.likes
+  },{
+    $set: {
+      likes: req.body.likes + 1
+    }
+  },{
+    sort: {_id: -1},
+    upsert: false
+  })
+  .then(result => {
+    console.log('Added One Like')
+    res.json('Like Added')
   })
   .catch(err => console.error(err))
 })
