@@ -4,21 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Do List from Scratch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1>To Do list</h1>
   <ul class="todos">
-    <% for(let i = 0; i < info.length; i++) {%>
-      <li class="todo">
-        <span><%= info[i].todoItem %></span>
-        <span class="delete">delete</span>
-      </li>
-    <% } %>
+  <% for(let i=0; i < todos.length; i++) {%>
+    <li class="todo">
+      <% if(todos[i].completed === true) {%>
+        <span class="completed"><%= todos[i].todo %></span>
+      <% }else{ %>
+        <span><%= todos[i].todo %></span>
+      <% } %>
+      <span class="fa fa-trash"></span>
+    </li>
+  <% } %>
   </ul>
 
+  <h2>Left to do: <%= left %></h2>
   <h2>Add a To Do:</h2>
-  <form action="/addtodo" method="post">
-    
+
+  <form action="/addtodo" method="POST">
+     <input type="text" placeholder="Thing To Do" name="todo">
+     <input type="submit">
   </form>
+  
+  
+  <script src="js/main.js"></script>
 </body>
 </html>
