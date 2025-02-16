@@ -39,3 +39,10 @@ app.get('/api/:plantName', (req, res) => { // colon lets express know that the q
     res.json(plants[plantsName])
   } else {
     res.json(plants['unknown'])
+  }
+})
+
+// tell server to listen for requests and confirm in console
+app.listen(process.env.PORT || PORT, ()=> {
+  console.log(`The server is running on port ${PORT}! You better go catch it!`)
+})
